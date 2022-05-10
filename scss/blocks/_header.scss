@@ -64,13 +64,12 @@
     }
 }
 
-.header__burger--btn{
+.header__burger-btn{
     display: none;
     font-size: 24px;
     border: none;
     background-color: transparent;
     color: #FFFFFF;
-    
 }
 
 @media only screen and (max-width:768px){
@@ -107,7 +106,7 @@
         margin-right: auto;
     }
     
-    .header__burger--btn{
+    .header__burger-btn{
         display: block;
         
         

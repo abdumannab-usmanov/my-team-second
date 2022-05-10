@@ -52,6 +52,21 @@
     
 }
 
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+
+    .hero {
+        background-image: url("../../img/talent@2x.png"), url("../../img/talent-bottom@2x.png");
+        
+    }
+}
+
 @media only screen and (max-width:1115px){
     
     .hero {
