@@ -42,6 +42,8 @@
     &:hover{
         color: $light-coral;
     }
+
+    
 }
 
 
@@ -61,6 +63,13 @@
     &:hover{
         background-color: $white-color;
         color: $dark-green;
+    }
+
+    &:active{
+        color: #406367;
+        border-color: #406367;
+        background-color: #012F34;
+
     }
 }
 
