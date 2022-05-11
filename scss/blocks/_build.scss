@@ -1,0 +1,256 @@
+.build {
+    background-color: $sacramento-state-green;
+    padding: 140px 0;
+    background-image: url("../img/build.png");
+    background-repeat: no-repeat;
+    background-size: 200px 244px;
+    background-position: calc(50% + 759px) calc(50% + 216px);
+}
+
+.build__inner {
+    display: flex;
+    align-items: flex-start;
+    
+    
+}
+.build__left {
+    width: 100%;
+    max-width: 445px;
+    margin-right: 125px;
+}
+.build__line {
+    display: inline-block;
+    width: 100%;
+    max-width: 50px;
+    min-height: 4px;
+    background-color: $light-coral;
+    margin-bottom: 54px;
+}
+
+.build__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+    margin: 0;
+    
+}
+
+.build__list {
+    @include list-global;
+    padding-top: 54px;
+}
+
+.build__item{
+    display: flex;
+    align-items: center;
+}
+
+.build__item + .build__item{
+    margin-top: 32px;  
+}
+
+.build__img{
+    margin-right: 23px;
+}
+
+
+.build__wrapper {
+    width: 100%;
+    max-width: 445px;
+}
+.build__text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: $light-coral;
+    margin: 0;
+    margin-bottom: 16px;
+}
+.build__info {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin: 0;
+    opacity: 0.8;
+    
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    
+    .build {
+        background-image: url("../img/build@2x.png");
+        
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .build{
+        padding: 120px 0;
+    }
+}
+
+
+@media only screen and (max-width:947px){
+    .build__left{
+        margin-right: 60px;
+    }
+    
+    .build__line{
+        margin-bottom: 40px;
+    }
+    
+    .build__title{
+        font-size: 45px;
+    }
+}
+
+
+@media only screen and (max-width:882px){
+    
+    .build{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .build__left{
+        margin-right: 30px;
+    }
+    
+    
+}
+
+@media only screen and (max-width:857px){
+    
+    .build__left {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .build__line{
+        margin-bottom: 35px;
+    }
+    
+    .build__title{
+        font-size: 43px;
+        line-height: 43px;
+    }
+}
+
+
+@media only screen and (max-width:812px){
+    
+    .build__left {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    
+    .build__title{
+        font-size: 40px;
+        line-height: 43px;
+    }
+    
+    .build__list{
+        padding-top: 49x;
+    }
+}
+
+
+@media only screen and (max-width:768px){
+    
+    
+    .build{  
+        background-position: calc(50% + 382px) calc(50% - 233px);
+    }
+    
+    .build__inner{
+        
+        flex-wrap:wrap ;
+        justify-content: center;
+    }
+    
+    .build__left{
+        width: 100%;
+        max-width: 445px;
+        margin-right: 0;
+        margin-bottom: 64px;
+    }
+    
+    .build__line{
+        margin-bottom: 32px;
+    }
+    
+    .build__title{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    
+    .build__list{
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width:467px){
+    
+    .build{
+        padding: 80px 0;
+    }
+    
+    
+    
+    
+}
+
+@media only screen and (max-width:379px){
+    
+    
+    .build{
+        padding: 64px 0;
+        background-position: calc(50% + 188px) calc(50% - 394px);
+    }
+    
+    
+    
+    
+    .build__inner{
+        justify-content: flex-start;
+    }
+    
+    .build__left{
+        width: 100%;
+        max-width: 240px;
+        margin-bottom: 56px;
+    }
+    
+    .build__item{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    .build__item + .build__item{
+        margin-top: 48px;  
+    }
+    
+    
+    .build__img{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .build__text{
+        margin-bottom: 8px;
+    }
+    
+    
+}
