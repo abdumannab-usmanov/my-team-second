@@ -1,0 +1,244 @@
+.companies {
+    padding: 140px 0;
+    background-color: $deep-jungle-green;
+    background-image: url("../../img/companies-left@2x.png"), url("../../img/companies-right.png");
+    background-size: 147px 100px, 200px 100px;
+    background-repeat: no-repeat;
+    background-position:calc(50% - 688px) top, calc(50% + 659px) bottom;
+}
+
+
+// .companies__inner{
+    
+// }
+.companies__wrapper {
+    width: 100%;
+    max-width: 932px;
+    margin: 0 auto;
+    margin-bottom: 92px;
+}
+
+.companies__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    
+}
+
+.companies__color{
+    color:$rapture-blue;
+}
+
+.compaines__list {
+    @include list-global;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.compaines__item {
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+    z-index: 2;
+    
+    &::before{
+        position: absolute;
+        top: -20px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        display: block;
+        width: 67px;
+        height: 56px;
+        background-image: url("../../img/marks.svg");
+        background-repeat:no-repeat;
+        background-size: 67px 56px;
+        margin: 0 auto;
+        content: "";
+    }
+}
+
+
+.compaines__blockquote {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 24px;
+}
+.compaines__text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #79C8C7;
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+
+
+.compaines__info {
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.compaines__img{
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width:1120px) {
+    .compaines__item:nth-child(2){
+        margin: 0 30px;
+    }
+    
+}
+
+@media only screen and (max-width:968px) {
+    .companies__title{
+        font-size: 45px;
+    }
+    
+}
+
+@media only screen and (max-width:957px) {
+    // .compaines__blockquote{
+    //     font-size: 13px;
+    // }
+
+    .compaines__item{
+        padding: 4px;
+    }
+    
+}
+
+@media only screen and (max-width:957px) {
+    
+    .companies{
+        padding: 120px 0 ;
+    }
+    
+    .companies__wrapper{
+        margin-bottom: 75px;
+    }
+    
+    .companies__title{
+        font-size: 45px;
+    }
+    
+    .compaines__item:nth-child(2){
+        margin: 0 25px;
+    }
+    
+    .compaines__blockquote{
+        font-size: 14px;
+    }
+    
+}
+
+@media only screen and (max-width:912px){
+    .companies__title{
+        font-size: 40px;
+    }
+
+}
+
+@media only screen and (max-width:901px) {
+    .companies{
+        padding: 100px 0 ;
+    }
+    .companies__wrapper{
+        margin-bottom: 75px;
+    }
+    
+    .companies__title{
+        font-size: 40px;
+        
+    }
+    
+    .compaines__item:nth-child(2){
+        margin: 0 20px;
+    }
+    
+}
+
+
+@media only screen and (max-width:829px) {
+    
+    
+    .companies__wrapper{
+        width: 100%;
+        max-width: 573px;
+        margin-bottom: 84px;
+    }
+    
+    .companies__title{
+        font-size: 32px;
+        line-height: 32px;
+        
+    }
+    
+    .compaines__list{
+        flex-direction: column;
+    }
+    
+    .compaines__item:nth-child(2){
+        margin: 84px 0;
+    }
+    
+    .compaines__blockquote{
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+
+    .companies {
+        background-image: url("../../img/companies-left@2x.png"), url("../../img/companies-right.png");
+        background-position:calc(50% - 308px) top, calc(50% + 285px) bottom;
+    }
+}
+
+
+@media only screen and (max-width:491px) {
+
+    .companies {
+        background-image: url("../../img/companies-left@2x.png"), url("../../img/companies-right.png");
+        background-position:calc(50% - 169px) top, calc(50% + 145px) bottom;
+    }
+
+
+    .companies{
+        padding: 140px 0 ;
+    }
+}
+
+@media only screen and (max-width:378px) {
+
+    .companies {
+        background-image: url("../../img/companies-left@2x.png"), url("../../img/companies-right.png");
+        background-position:calc(50% - 112px) top, calc(50% + 89px) bottom;
+    }
+
+
+    .companies{
+        padding: 140px 0  168px;
+    }
+
+    .companies__wrapper{
+        width: 100%;
+        max-width: 327px;
+    }
+}
