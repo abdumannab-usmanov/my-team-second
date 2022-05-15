@@ -1,13 +1,13 @@
-.footer {
+.about-footer {
     background-color: $dark-green;
     padding: 48px 0;
 }
 
-.footer__inner {
+.about-footer__inner {
     display: flex;
     align-items: center;
 }
-.footer__left {
+.about-footer__left {
     display: flex;
     align-items: center;
     margin-right: auto;
@@ -46,7 +46,7 @@
     }
 }
 
-.footer__location {
+.about-footer__location {
     @include list-global;
     
 }
@@ -64,7 +64,7 @@
 }
 
 
-.footer__list {
+.about-footer__list {
     @include list-global;
     display: flex;
     justify-content: flex-end;
@@ -72,29 +72,29 @@
     margin-bottom: 51px;
 }
 
-.footer__item + .footer__item{
+.about-footer__item + .about-footer__item{
     margin-left: 16px;
     
 }
 
-.footer__link {
+.about-footer__link {
     display:block;
     
     
 }
 
-.footer__link:hover > .footer__img {
+.about-footer__link:hover > .about-footer__img {
     
     fill:$light-coral;
     
 }
 
-.footer__img {
+.about-footer__img {
     fill: white;
     transition: all 0.4s ease;
 }
 
-.footer__text{
+.about-footer__text{
     font-weight: 600;
     font-size: 15px;
     line-height: 25px;
@@ -108,17 +108,17 @@
 
 @media only screen and (max-width:810px){
 
-    .footer{
+    .about-footer{
         padding: 56px 0;
     }
 
-    .footer__inner {
+    .about-footer__inner {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
     }
 
-    .footer__left {
+    .about-footer__left {
         justify-content: space-between;
         width: 100%;
         margin-bottom: 35px;
@@ -132,11 +132,11 @@
         margin-bottom: 53px;
     }
 
-    .footer__location {
+    .about-footer__location {
         text-align: right;
     }
 
-    .footer__right {
+    .about-footer__right {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -144,7 +144,7 @@
        
     }
 
-    .footer__list {
+    .about-footer__list {
         margin-bottom: 0;
     }
 
@@ -153,17 +153,17 @@
 
 @media only screen and (max-width:576px){
 
-    .footer{
+    .about-footer{
         padding: 66px 0 64px;
     }
 
-    .footer__inner {
+    .about-footer__inner {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    .footer__left {
+    .about-footer__left {
         flex-direction: column;
         justify-content: center;
         width: 100%;
@@ -182,17 +182,17 @@
         justify-content: space-between;
     }
 
-    .footer__location {
+    .about-footer__location {
         text-align: center;
         margin-bottom: 40px;
     }
 
-    .footer__right {
+    .about-footer__right {
         flex-direction: column;
        
     }
 
-    .footer__list {
+    .about-footer__list {
         margin-bottom: 16px;
     }
 

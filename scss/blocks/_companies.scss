@@ -33,14 +33,14 @@
     color:$rapture-blue;
 }
 
-.compaines__list {
+.companies__list {
     @include list-global;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.compaines__item {
+.companies__item {
     width: 100%;
     max-width: 350px;
     position: relative;
@@ -64,7 +64,7 @@
 }
 
 
-.compaines__blockquote {
+.companies__blockquote {
     font-weight: 600;
     font-size: 15px;
     line-height: 25px;
@@ -73,7 +73,7 @@
     margin: 0;
     margin-bottom: 24px;
 }
-.compaines__text {
+.companies__text {
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
@@ -84,7 +84,7 @@
 }
 
 
-.compaines__info {
+.companies__info {
     font-size: 13px;
     line-height: 18px;
     text-align: center;
@@ -93,7 +93,7 @@
     margin-bottom: 32px;
 }
 
-.compaines__img{
+.companies__img{
     display: block;
     margin: 0 auto;
 }
@@ -114,7 +114,7 @@ only screen and (                min-resolution: 2dppx) {
 
 
 @media only screen and (max-width:1120px) {
-    .compaines__item:nth-child(2){
+    .companies__item:nth-child(2){
         margin: 0 30px;
     }
     
@@ -130,7 +130,7 @@ only screen and (                min-resolution: 2dppx) {
 @media only screen and (max-width:957px) {
     
 
-    .compaines__item{
+    .companies__item{
         padding: 4px;
     }
     
@@ -150,15 +150,15 @@ only screen and (                min-resolution: 2dppx) {
         font-size: 45px;
     }
     
-    .compaines__item{
+    .companies__item{
         padding: 0;
     }
 
-    .compaines__item:nth-child(2){
+    .companies__item:nth-child(2){
         margin: 0 25px;
     }
     
-    .compaines__blockquote{
+    .companies__blockquote{
         font-size: 14px;
     }
     
@@ -184,7 +184,7 @@ only screen and (                min-resolution: 2dppx) {
         
     }
     
-    .compaines__item:nth-child(2){
+    .companies__item:nth-child(2){
         margin: 0 20px;
     }
     
@@ -206,15 +206,20 @@ only screen and (                min-resolution: 2dppx) {
         
     }
     
-    .compaines__list{
+    .companies__list{
         flex-direction: column;
     }
+
+    .companies__item{
+        width: 100%;
+        max-width: 573px
+    }
     
-    .compaines__item:nth-child(2){
+    .companies__item:nth-child(2){
         margin: 84px 0;
     }
     
-    .compaines__blockquote{
+    .companies__blockquote{
         font-size: 15px;
     }
 }

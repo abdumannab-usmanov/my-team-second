@@ -1,40 +1,40 @@
-.header {
+.about-header {
     padding-top: 73px;
     padding-bottom: 73px;
     background-color: $midnight-green;
     
 }
 
-.header__inner {
+.about-header__inner {
     display: flex;
     align-items:center;
 }
-.header__logo {
+.about-header__logo {
     margin-right: 80px;
 }
 
-.header__img{
+.about-header__img{
     width: 100%;
     max-width: 159px;
     max-height: 40px;
 }
 
-.header__menu {
+.about-header__menu {
     margin-right: auto;
 }
-.header__list {
+.about-header__list {
     @include list-global;
     display: flex;
     align-items: center;
 }
-.header__item + .header__item{
+.about-header__item + .about-header__item{
     margin-left: 40px;
     
 }
 
 
 
-.header__link {
+.about-header__link {
     text-decoration: none;
     font-weight: 600;
     font-size: 18px;
@@ -50,7 +50,7 @@
 }
 
 
-.header__contact {
+.about-header__contact {
     display: inline-block;
     text-decoration: none;
     font-weight: 600;
@@ -75,7 +75,7 @@
     }
 }
 
-.header__burger-btn{
+.about-header__burger-btn{
     display: none;
     font-size: 24px;
     border: none;
@@ -85,15 +85,15 @@
 
 @media only screen and (max-width:768px){
     
-    .header{
+    .about-header{
         padding: 64px 0;
     }
 
-    .header__logo {
+    .about-header__logo {
         margin-right: 48px;
     }
     
-    .header__img{
+    .about-header__img{
         width: 100%;
         max-width: 127px;
         max-height: 32px;
@@ -102,25 +102,25 @@
 
 @media only screen and (max-width:576px){
     
-    .header{
+    .about-header{
         padding-top: 48px;
         padding-bottom: 48px;
     }
 
 
-    .header__menu , .header__contact {
+    .about-header__menu , .about-header__contact {
         display: none;
     }
 
     // ===============addition===============
 
-    // .header__contact {
+    // .about-header__contact {
     //     display: block;
     //     position: relative;
     //     z-index: 2; 
     // }
 
-    // .header__menu{
+    // .about-header__menu{
     //     position: absolute;
     //     z-index: 1;
     //     top: 0;
@@ -131,26 +131,26 @@
     //     background-color: $light-coral;
     // }
 
-    // .header__list{
+    // .about-header__list{
     //     align-items: flex-start;
     // }
 
-    // .header__item + .header__item{
+    // .about-header__item + .about-header__item{
     //     margin-left: 0;
     // }
     
 
     // ================================
     
-    .header__logo{
+    .about-header__logo{
         margin-right: auto;
     }
 
-    // .header__list{
+    // .about-header__list{
     //     flex-direction: column;
     // }
     
-    .header__burger-btn{
+    .about-header__burger-btn{
         // position: relative;
         // z-index: 2;   
         display: block;

@@ -1,0 +1,125 @@
+.about-hero {
+    padding-top: 47px;
+    padding-bottom: 120px;
+    background-color: $midnight-green;
+    background-image: url("../../img/about-hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position:  calc(50% + 767px) bottom;
+}
+
+
+.about-hero__inner {
+    display: flex;
+    
+}
+.about-hero__left {
+    width: 100%;
+    max-width: 350px;
+    margin-right: 30px;
+}
+
+.about-hero__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+
+.about-hero__right {
+    width: 100%;
+    max-width: 730px;
+    padding-top: 44px;
+    position: relative;
+    
+    &::before{
+        position: absolute;
+        top: 0;
+        display: inline-block;
+        width: 100%;
+        max-width: 50px;
+        min-height: 4px;
+        background-color: $light-coral;
+        content: "";
+    }
+}
+
+
+.about-hero__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin: 0;
+    
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    
+    .about-hero {
+        background-image: url("../img/about-hro-bg@2x.png"),;
+        
+    }
+}
+
+
+@media only screen and (max-width:850px){
+    
+
+    .about-hero {
+        padding-top: 39px;
+        padding-bottom: 112px;
+    }
+    
+    .about-hero__inner{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .about-hero__left{
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+    
+    .about-hero__title {
+        line-height: 56px;
+    }
+    
+    
+    .about-hero__right{
+        width: 100%;
+        max-width: 457px;
+        padding: 0;
+        
+        &::before {
+            display: none;
+            
+        }
+    }
+    
+    
+    .about-hero__text {
+        font-size: 15px;
+        
+    }
+}
+
+
+
+@media only screen and (max-width:768px){
+    
+
+    .about-hero {
+        background-position:  calc(50% + 384px) bottom;
+    }
+}
